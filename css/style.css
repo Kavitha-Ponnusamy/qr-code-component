@@ -1,0 +1,125 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- *
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+html {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.6;
+  background-color: rgb(213, 224, 240);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-card {
+  background-color: #fff;
+  border: 0px solid #ffff;
+  width: 28vw;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 1.2em 1.25em 1.2em 1.2em;
+  border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+}
+.page-card img {
+  border-radius: 10px 10px 10px 10px;
+}
+.page-card h1 {
+  padding-top: 1.2em;
+  text-align: center;
+  color: #334155;
+  font-size: 2em;
+}
+.page-card p {
+  padding-top: 1.2rem;
+  font-size: 1.2em;
+  padding-bottom: 1.2em;
+  line-height: normal;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+@media only screen and (min-width: 12em) and (max-width: 37.5em) {
+  .page-card {
+    width: 80vw;
+  }
+  .page-card h1 {
+    font-size: 1.2em;
+  }
+  .page-card p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 62em) {
+  .page-card {
+    width: 85vw;
+  }
+  .page-card h1 {
+    font-size: 1.8em;
+  }
+  .page-card p {
+    font-size: 1.4em;
+  }
+}
